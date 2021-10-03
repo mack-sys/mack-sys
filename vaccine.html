@@ -1,0 +1,64 @@
+<html>
+<head>
+<style>
+body {
+background-image : url("https://images.pexels.com/photos/5878501/pexels-photo-5878501.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+background-repeat: no-repeat;
+background-position:center;
+background-size:cover;
+
+}
+table{
+box-shadow: 1px 2px 4px 1px black;
+border-radius:20%;
+padding:25px;
+}
+td {
+
+padding : 15px;
+font-size:18px;
+}
+input,select,option,textarea {
+padding : 20px;
+border-style:none;
+border-radius:10px;
+}
+.sub{
+padding: 15px 15px;
+font-size: 15px;
+background-color:green;
+color:white;
+box-shadow: 1px 2px 4px 1px black;
+}
+</style>
+</head>
+<body background="">
+<h1>Vaccine Registration</h1>
+
+<form>
+<table>
+
+<tr><td>Enter Patient Name <td> <input type=text name=t1 size=20 required> </tr>
+<tr><td>Select Date <td> <input type=date name=t1 size=20 required> </tr>
+<tr><td>Select appointment time <td><select name=t10</tr>
+<option>9 AM<option>
+<option>11 AM<option>
+<option>1 PM<option>
+<option>3 PM<option>
+<option>5 PM<option>
+</select>
+<tr><td>Enter your dose <td><select name=t10</tr>
+<option>First Dose <option>
+<option>Second Dose<option>
+
+</select>
+</tr>
+<tr><td>Enter your Address <td><textarea rows=5 cols=35 name=t15></textarea></tr>
+
+<tr><td><td><input type=submit value=Submit class="sub"></tr>
+</table>
+	
+</form>
+
+</body>
+</html>

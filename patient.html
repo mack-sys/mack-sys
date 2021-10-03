@@ -1,0 +1,109 @@
+<html>
+<head>
+
+<title>
+Training
+</title>
+<script>
+function fun(){
+var a = f1.t1.value;
+var b = f1.t2.value;
+var c = f1.t3.value;
+var d =f1.t4.value;
+
+if(a == ""){
+alert("Please enter name");
+f1.t1.focus();
+}
+else if(!(isNaN(a))){
+alert("please enter a name not number");
+f1.t1.focus();
+}
+else if(b == ""){
+alert("Please enter email");
+f1.t2.focus();
+}
+else if(!(isNaN(b))){
+alert("please enter a name not number");
+f1.t2.focus();
+}
+else if(c == "")
+{
+alert("Please Enter a Number 10 digits only");
+ f1.t3.focus();
+}
+else if(c.length != 10)
+{
+alert("Please Enter a Number 10 digits only");
+ f1.t3.focus();
+}
+else if(d == "")
+{
+alert("Please select any one");
+
+}
+else {
+alert("data submited successfully");
+f1.submit();
+}
+
+}
+</script>
+<style>
+body {
+background-image : url("https://images.pexels.com/photos/3786157/pexels-photo-3786157.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+background-repeat: no-repeat;
+background-position:center;
+background-size:cover;
+
+}
+table{
+box-shadow: 1px 2px 4px 1px black;
+border-radius:15%;
+padding:20px;
+background: rgb(193,191,226);
+background: linear-gradient(90deg, rgba(193,191,226,1) 8%, rgba(101,214,194,1) 44%, rgba(15,135,159,1) 93%);
+font-family: 'Ubuntu', sans-serif;
+}
+td {
+
+padding : 10px;
+font-size:15px;
+}
+input,select,option,textarea {
+padding : 20px;
+border-style:none;
+border-radius:10px;
+
+}
+.sub{
+padding: 15px 15px;
+font-size: 15px;
+background-color:green;
+color:white;
+box-shadow: 1px 2px 4px 1px black;
+}
+</style>
+</head>
+<body>
+<center><h1 style="color:black;font-family: 'Ubuntu', sans-serif;border-bottom:2px solid black; border-radius:20px;padding:15px;">Patient Registration</h1></center>
+
+<form autocomplete="on" name="f1">
+<center>
+<table>
+
+<tr><td>Enter Patient Name <td> <input type=text name=t1 size=20 > </tr>
+<tr><td>Enter Patient email <td> <input type=email name=t2 size=20 > </tr>
+<tr><td>Enter Patient Phone no <td> <input type=number name=t3 size=20  autocomplete="off"> </tr>
+<tr><td>Enter Patient gender <td><input type=radio name=t4 value=male>Male <input type=radio value=Female>Female </tr>
+<tr><td>Enter Patient DOB <td> <input type=date name=t5 size=20> </tr>
+
+
+<tr><td><td><input type=submit value=Submit class="sub" onClick="fun()"></tr>
+</table>
+</center>	
+</form>
+
+
+</body>
+</html>

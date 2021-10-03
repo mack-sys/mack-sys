@@ -1,0 +1,35 @@
+h1 {
+
+}
+body {
+
+background-image:url("https://images.pexels.com/photos/668298/pexels-photo-668298.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+ background-color: #cccccc;
+background-repeat : no-repeat;
+background-size : cover;
+background-position : center;
+
+
+}
+.heading {
+text-align: center;
+font-size:90px;
+color:white;
+}
+.heading1 {
+text-align : center;
+font-size : 30px;
+color : white;
+border-bottom : 1px solid black;
+border-top : 1px solid black;
+box-shadow : 1px 1px 3px 3px black;
+padding: 10px;
+}
+.decor {
+text-decoration : none;
+background-color: white;
+text-align: center;
+box-shadow: 1px 2px 4px 1px black;
+padding:25px
+
+}
